@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Exericices.AbsoluteLayout">
+    <ContentPage.Content>
+        <AbsoluteLayout >
+            <Image Source="http://lorempixel.com/1920/1080/nature/7" 
+                   Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds="1,1,1,1"
+                   AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="Relax" 
+                   FontSize="30"
+                   AbsoluteLayout.LayoutBounds="0.5,0,100,100"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="White"/>
+            <Button Text="Profile"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0,1,0.3333,100" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+            <Button Text="Meditate"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0.5,1,0.3333,100" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+            <Button Text="Themes"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="1,1,0.3333,100" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

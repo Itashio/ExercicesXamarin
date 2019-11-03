@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Exericices.ImagesStackLayoutExercice"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20,20,20">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="PREVIOUS" TextColor="White" HorizontalOptions="StartAndExpand" />
+                <Button Text="NEXT" TextColor="White" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Image x:Name="MyImage" Source="http://lorempixel.com/1920/1080/city/1/"/>
+            <ActivityIndicator BindingContext="{x:Reference MyImage}" IsRunning="{Binding IsLoading}" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
